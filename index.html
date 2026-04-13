@@ -11,29 +11,120 @@
     .header h1{font-size:2.5rem;font-weight:700;color:#fff}
     .header h1 span{color:#4a9eff}
     .header p{margin-top:.5rem;color:#888;font-size:1.1rem}
+    .header .series-tag{display:inline-block;margin-top:1rem;padding:.3rem .8rem;border-radius:99px;font-size:.75rem;font-weight:600;background:#1a2e1a;color:#a3e635;letter-spacing:.05em}
     .grid{max-width:1000px;margin:2rem auto;padding:0 1.5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
     .card{background:#111;border:1px solid #222;border-radius:12px;padding:1.5rem;transition:border-color .2s,transform .2s}
     .card:hover{border-color:#4a9eff;transform:translateY(-2px)}
     .card h3{font-size:1.1rem;color:#fff;margin-bottom:.4rem}
-    .card .domain{font-size:.75rem;text-transform:uppercase;color:#4a9eff;letter-spacing:.08em;margin-bottom:.6rem}
-    .card p{font-size:.9rem;color:#999;line-height:1.5;margin-bottom:1rem}
-    .card a{color:#4a9eff;text-decoration:none;font-size:.85rem;font-weight:500}
-    .card a:hover{text-decoration:underline}
-    .badge{display:inline-block;padding:.15rem .5rem;border-radius:99px;font-size:.7rem;font-weight:600}
+    .card .domain{font-size:.75rem;text-transform:uppercase;color:#a3e635;letter-spacing:.08em;margin-bottom:.3rem}
+    .card .vol{font-size:.7rem;color:#4a9eff;margin-bottom:.6rem;font-weight:500}
+    .card p{font-size:.85rem;color:#999;line-height:1.5;margin-bottom:1rem}
+    .card .links{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+    .card a{text-decoration:none;font-size:.85rem;font-weight:500}
+    .card a.preview{color:#4a9eff}
+    .card a.preview:hover{text-decoration:underline}
+    .card a.buy{display:inline-block;padding:.3rem .75rem;border-radius:6px;background:#a3e635;color:#0a0a0a;font-weight:600;font-size:.8rem;transition:background .2s}
+    .card a.buy:hover{background:#bef264}
+    .badge{display:inline-block;padding:.15rem .5rem;border-radius:99px;font-size:.7rem;font-weight:600;margin-bottom:.5rem}
     .badge.live{background:#0d2818;color:#4ade80}
+    .bundle{max-width:1000px;margin:1.5rem auto;padding:0 1.5rem}
+    .bundle-card{background:linear-gradient(135deg,#111 0%,#1a1a2e 100%);border:1px solid #a3e635;border-radius:12px;padding:2rem;text-align:center}
+    .bundle-card h3{font-size:1.3rem;color:#fff;margin-bottom:.5rem}
+    .bundle-card p{color:#999;font-size:.9rem;margin-bottom:1rem}
+    .bundle-card a{display:inline-block;padding:.5rem 1.5rem;border-radius:8px;background:#a3e635;color:#0a0a0a;font-weight:700;font-size:.95rem;text-decoration:none;transition:background .2s}
+    .bundle-card a:hover{background:#bef264}
     .footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px solid #1a1a2e;margin-top:2rem}
   </style>
 </head>
 <body>
-  <div class="header"><h1>Kaizen<span>OS</span></h1><p>Interactive products and operator-level frameworks</p></div>
-  <div class="grid">
-    <div class="card"><div class="domain">Workforce Development</div><h3>Employer Info Brief</h3><p>Interactive employer information briefing tool.</p><span class="badge live">LIVE</span><br><a href="https://kaizenos-cmd.github.io/kz-wd-eib-4f/">Open Product</a></div>
-    <div class="card"><div class="domain">Workforce Development</div><h3>Section Analysis</h3><p>Sectoral analysis framework for workforce planning.</p><span class="badge live">LIVE</span><br><a href="https://kaizenos-cmd.github.io/kz-wd-sec-9a/">Open Product</a></div>
-    <div class="card"><div class="domain">Workforce Development</div><h3>Business Process Framework</h3><p>Business process mapping and optimization.</p><span class="badge live">LIVE</span><br><a href="https://kaizenos-cmd.github.io/kz-wd-bpf-2d/">Open Product</a></div>
-    <div class="card"><div class="domain">Workforce Development</div><h3>Compliance Tool</h3><p>Workforce compliance tracking and verification.</p><span class="badge live">LIVE</span><br><a href="https://kaizenos-cmd.github.io/kz-wd-comp-7c/">Open Product</a></div>
-    <div class="card"><div class="domain">Workforce Development</div><h3>Report Generator</h3><p>Interactive reporting for workforce development metrics.</p><span class="badge live">LIVE</span><br><a href="https://kaizenos-cmd.github.io/kz-wd-rpt-5b/">Open Product</a></div>
-    <div class="card"><div class="domain">Workforce Development</div><h3>Org Assessment</h3><p>Organizational readiness and assessment framework.</p><span class="badge live">LIVE</span><br><a href="https://kaizenos-cmd.github.io/kz-wd-org-8e/">Open Product</a></div>
+  <div class="header">
+    <h1>Kaizen<span>OS</span></h1>
+    <p>Practitioner-grade Workday SOPs for HRIS Admins and Consultants</p>
+    <span class="series-tag">WORKDAY SOP SERIES • 6 VOLUMES</span>
   </div>
-  <div class="footer">2026 KaizenOS - Built for operators, by operators.</div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="domain">Workday SOP Series</div>
+      <div class="vol">Vol. 01</div>
+      <h3>Integration Setup SOP</h3>
+      <p>EIB & Studio — Configuring, validating, and governing Workday integrations.</p>
+      <span class="badge live">LIVE</span>
+      <div class="links">
+        <a class="preview" href="https://kaizenos-cmd.github.io/kz-wd-eib-4f/">Preview</a>
+        <a class="buy" href="#" data-gumroad="eib">Buy on Gumroad</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="domain">Workday SOP Series</div>
+      <div class="vol">Vol. 02</div>
+      <h3>Security Groups & Domain Policies</h3>
+      <p>Designing, configuring, and governing Workday security architecture.</p>
+      <span class="badge live">LIVE</span>
+      <div class="links">
+        <a class="preview" href="https://kaizenos-cmd.github.io/kz-wd-sec-9a/">Preview</a>
+        <a class="buy" href="#" data-gumroad="sec">Buy on Gumroad</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="domain">Workday SOP Series</div>
+      <div class="vol">Vol. 03</div>
+      <h3>Business Process Framework</h3>
+      <p>Designing, configuring, and maintaining Workday Business Processes and routing logic.</p>
+      <span class="badge live">LIVE</span>
+      <div class="links">
+        <a class="preview" href="https://kaizenos-cmd.github.io/kz-wd-bpf-2d/">Preview</a>
+        <a class="buy" href="#" data-gumroad="bpf">Buy on Gumroad</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="domain">Workday SOP Series</div>
+      <div class="vol">Vol. 04</div>
+      <h3>Compensation Grades & Plans</h3>
+      <p>Designing and configuring Workday Compensation — grade structures, salary ranges, and plans.</p>
+      <span class="badge live">LIVE</span>
+      <div class="links">
+        <a class="preview" href="https://kaizenos-cmd.github.io/kz-wd-comp-7c/">Preview</a>
+        <a class="buy" href="#" data-gumroad="comp">Buy on Gumroad</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="domain">Workday SOP Series</div>
+      <div class="vol">Vol. 05</div>
+      <h3>Custom Reports & Calculated Fields</h3>
+      <p>Building, governing, and optimising Workday custom reports and analytics.</p>
+      <span class="badge live">LIVE</span>
+      <div class="links">
+        <a class="preview" href="https://kaizenos-cmd.github.io/kz-wd-rpt-5b/">Preview</a>
+        <a class="buy" href="#" data-gumroad="rpt">Buy on Gumroad</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="domain">Workday SOP Series</div>
+      <div class="vol">Vol. 06 — Final Volume</div>
+      <h3>Org Structures & Supervisory Orgs</h3>
+      <p>Designing, building, and maintaining Workday organisational structures and hierarchy.</p>
+      <span class="badge live">LIVE</span>
+      <div class="links">
+        <a class="preview" href="https://kaizenos-cmd.github.io/kz-wd-org-8e/">Preview</a>
+        <a class="buy" href="#" data-gumroad="org">Buy on Gumroad</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bundle">
+    <div class="bundle-card">
+      <h3>Complete Workday SOP Bundle — All 6 Volumes</h3>
+      <p>Get the full practitioner-grade SOP series. Built for HRIS Admins and Workday Consultants.</p>
+      <a href="#" data-gumroad="bundle">Buy the Bundle on Gumroad</a>
+    </div>
+  </div>
+
+  <div class="footer">2026 KaizenOS — Built for operators, by operators.</div>
 </body>
 </html>
